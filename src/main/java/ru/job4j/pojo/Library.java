@@ -5,7 +5,7 @@ public class Library {
         Book one = new Book("One", 100);
         Book two = new Book("Two", 200);
         Book three = new Book("Three", 300);
-        Book four = new Book("Clean code", 400);
+        Book four = new Book("Clean code", 500);
         Book[] books = new Book[4];
         books[0] = one;
         books[1] = two;
