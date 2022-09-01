@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StartUI {
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = true;
-        while(run) {
+        while (run) {
             showMenu();
             System.out.print("Select: ");
             int select = Integer.parseInt(scanner.nextLine());
@@ -23,7 +23,7 @@ public class StartUI {
             "Delete item", "Find item by id", "Find items by name",
             "Exit Program"
         };
-        System.out.println("Menu:");
+        System.out.println("Menu: ");
         for (int i = 0; i < menu.length; i++) {
             System.out.println(i + ". " + menu[i]);
         }
