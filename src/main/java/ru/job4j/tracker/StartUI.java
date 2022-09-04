@@ -16,8 +16,6 @@ public class StartUI {
                 Item item = new Item(name);
                 tracker.add(item);
                 System.out.println("Added application: " + item);
-            } else if (select == 6) {
-                run = false;
             } else if (select == 1) {
                 System.out.println("== Show all items ==");
                 Item[] items = tracker.findAll();
@@ -28,6 +26,20 @@ public class StartUI {
                 } else {
                     System.out.println("The repository does not yet contain claims");
                 }
+            } else if (select == 2) {
+                System.out.println("=== Edit item ===");
+                System.out.println("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                System.out.println("Enter name: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                if (tracker.replace(id, item)) {
+                    System.out.println("Application changed successfully.");
+                } else {
+                    System.out.println("Request replacement error.");
+                }
+            } else if (select == 6) {
+                run = false;
             }
         }
     }
