@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Bus implements Transport {
 
-
     @Override
     public void travel() {
         System.out.print("How much will we go? ");
