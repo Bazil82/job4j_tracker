@@ -37,6 +37,10 @@ public class Item {
         this.name = name;
     }
 
+    public String getDate() {
+        return created.format(FORMATTER);
+    }
+
     public LocalDateTime getCreated() {
         return created;
     }
