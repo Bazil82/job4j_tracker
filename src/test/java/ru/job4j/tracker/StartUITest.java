@@ -66,12 +66,7 @@ public class StartUITest {
                              + "0. Show all items" + ln
                              + "1. End menu" + ln
                              + "== Show all items ==" + ln
-                             + "Item{id=" + one.getId()
-                             + ", name='" + one.getName() + '\''
-                             + ", created=" + one.getDate() + "}" + ln
-                             + "Item{id=" + two.getId()
-                             + ", name='" + two.getName() + '\''
-                             + ", created=" + two.getDate() + "}" + ln
+                             + one + ln + two + ln
                              + "Menu: " + ln
                              + "0. Show all items" + ln
                              + "1. End menu" + ln
@@ -98,9 +93,7 @@ public class StartUITest {
                         + "0. Find Item by name" + ln
                         + "1. End menu" + ln
                         + "=== Find items by name ===" + ln
-                        + "Item{id=" + two.getId()
-                        + ", name='" + two.getName() + '\''
-                        + ", created=" + two.getDate() + "}" + ln
+                        + two + ln
                         + "Menu: " + ln
                         + "0. Find Item by name" + ln
                         + "1. End menu" + ln
@@ -127,9 +120,7 @@ public class StartUITest {
                         + "0. Find Item by ID" + ln
                         + "1. End menu" + ln
                         + "=== Find item by id ===" + ln
-                        + "Item{id=" + two.getId()
-                        + ", name='" + two.getName() + '\''
-                        + ", created=" + two.getDate() + "}" + ln
+                        + two + ln
                         + "Menu: " + ln
                         + "0. Find Item by ID" + ln
                         + "1. End menu" + ln
