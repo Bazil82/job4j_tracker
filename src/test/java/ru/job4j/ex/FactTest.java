@@ -12,7 +12,7 @@ public class FactTest extends TestCase {
     public void testCalc() {
         int num = 3;
         int exp = 6;
-        int res =new Fact().calc(num);
+        int res = new Fact().calc(num);
         assertThat(res).isEqualTo(exp);
     }
 
